@@ -115,8 +115,8 @@ comments:
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
     clientID: 46aa5b43aafa8c84adc2 # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository: eece64d64f94a9b0981b518572d532b147c21543 # GitHub repo
+    clientSecret: eece64d64f94a9b0981b518572d532b147c21543 # GitHub Application Client Secret
+    repository: beyondyuanshu.github.io # GitHub repo
     owner: beyondyuanshu # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       - beyondyuanshu
