@@ -5,7 +5,7 @@ comments: true
 key: C-2019090301
 ---
 
-Qt 的元对象系统（The Meta-Object System）由它的元对象编译器（Meta-Object Compiler，moc）帮忙实现，moc 通过读取头文件中的 Q_OBJCET 宏来判断是否需要生成元对象代码。如果需要，则生成以 moc_ 开头的源文件，在连接（Linking）时会和源文件一起生成可执行文件。
+Qt 的元对象系统（The Meta-Object System）由它的元对象编译器（Meta-Object Compiler，moc）帮忙实现，moc 通过读取头文件中的 Q_OBJCET 宏来判断是否需要生成元对象代码。如果需要，则生成以 moc\_ 开头的源文件，在连接（Linking）时会和源文件一起生成可执行文件。
 
 ## 是什么
 
@@ -27,7 +27,7 @@ Qt 的元对象系统（The Meta-Object System）由它的元对象编译器（M
 
 3. `moc` 为每个 QObject 子类提供实现元对象特性所需要的代码。
 
-moc 工具读取 C++ 源文件。如果发现源文件中有一个类或者多个类的声明中包含 Q_OBJECT 宏，它就生成一个包含了这些类所需要的元对象代码的源文件。这个新源文件的文件名为源文件名前加上 moc_。新生成的源文件必须被 #include 到源文件中，或者更常见的是编译和连接到类的实现中。
+moc 工具读取 C++ 源文件。如果发现源文件中有一个类或者多个类的声明中包含 Q_OBJECT 宏，它就生成一个包含了这些类所需要的元对象代码的源文件。这个新源文件的文件名为源文件名前加上 moc\_。新生成的源文件必须被 #include 到源文件中，或者更常见的是编译和连接到类的实现中。
 
 ## 怎么用
 
@@ -225,7 +225,7 @@ moc 工具读取 C++ 源文件。如果发现源文件中有一个类或者多�
 
 ## 参考
 
-[1]: https://en.wikipedia.org/wiki/Meta-object_System
-[2]: https://doc.qt.io/qt-5/metaobjects.html
-[3]: https://doc.qt.io/qt-5/moc.html
-[4]: https://blog.51cto.com/devbean/355100
+https://en.wikipedia.org/wiki/Meta-object_System
+https://doc.qt.io/qt-5/metaobjects.html
+https://doc.qt.io/qt-5/moc.html
+https://blog.51cto.com/devbean/355100
