@@ -2,7 +2,7 @@
 title: Qt 核心之元对象系统
 tags: Qt The-Meta-Object-System moc
 comments: true
-key: a20190903
+key: C-2019090301
 ---
 
 Qt 的元对象系统（The Meta-Object System）由它的元对象编译器（Meta-Object Compiler，moc）帮忙实现，moc 通过读取头文件中的 Q*OBJCET 宏来判断是否需要生成元对象代码。如果需要，则生成以 moc* 开头的源文件，在连接（Linking）时会和源文件一起生成可执行文件。
