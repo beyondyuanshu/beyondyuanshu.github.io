@@ -225,7 +225,7 @@ moc 工具读取 C++ 源文件。如果发现源文件中有一个类或者多�
 
 ## 参考
 
-https://en.wikipedia.org/wiki/Meta-object_System
-https://doc.qt.io/qt-5/metaobjects.html
-https://doc.qt.io/qt-5/moc.html
-https://blog.51cto.com/devbean/355100
+1. [https://en.wikipedia.org/wiki/Meta-object_System](https://en.wikipedia.org/wiki/Meta-object_System)
+2. [https://doc.qt.io/qt-5/metaobjects.html](https://doc.qt.io/qt-5/metaobjects.html)
+3. [https://doc.qt.io/qt-5/moc.html](https://doc.qt.io/qt-5/moc.html)
+4. [https://blog.51cto.com/devbean/355100](https://blog.51cto.com/devbean/355100)
