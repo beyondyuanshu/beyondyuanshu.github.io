@@ -1,6 +1,11 @@
-# Qt 核心之属性系统
+---
+title: Qt 核心之属性系统
+tags: Qt The-Property-System
+comments: true
+key: C-201909030801
+---
 
-属性可以是通常的位置（x/y）、宽高（width/height）或者颜色（color）等，也可以是某种特定类型，比如单选框的选中状态（checked）。一个类的属性通常指它的成员变量。这些属性有它自己的一些行为，比如读取（read）、设置（set）、变化通知（notify signal）等。用来管理这些行为的系统称为属性系统，Qt 的属性系统是基于元对象系统的。
+属性可以是通常的位置（x/y）、宽高（width/height）或者颜色（color）等，也可以是某种特定类型，比如单选框的选中状态（checked）。一个类的属性通常是指它的成员变量。这些属性有它自己的一些行为，比如读取（read）、设置（set）、变化通知（notify signal）等。用来管理这些行为的系统称为属性系统，Qt 的属性系统是基于元对象系统的。
 
 Qt 的属性系统主要有以下方面的应用：
 
@@ -47,12 +52,12 @@ READ、WRITE、ERSET 指定的函数可以被继承，也能被定义为虚函�
 
 ## 怎么读取和修改属性？
 
-声明属性的两种方式对应着两种读取修改属性的方法：
+声明属性的两种方式对应着两种操作属性的方法：
 
 * 自定义读/写函数
 * QObject::property() 以及 QObject::setProperty()
 
-前一种方法中的写操作性能要优于第二种，因为他是在编译器完成的。自定义写函数的缺点在于需要你在编译期间知道有这种方法的存在。假如你不知道类中有什么方法可以读/写属性，Qt 提供了 QObject、QMetaObject、以及 QMetaProperties 类帮助你得到属性名及其操作方法。
+前一种方法中的写操作性能要优于第二种，因为他是在编译期完成的。自定义写函数的缺点在于需要你在编译期间知道有这种方法的存在。假如你不知道类中有什么方法可以读/写属性，Qt 提供了 QObject、QMetaObject、以及 QMetaProperties 类帮助你得到属性名及其操作方法。
 
 ```c++
 QObject *object = ...
@@ -80,7 +85,7 @@ QObject::setProperty() 可以在运行时给实例添加属性值。
 
 **动态属性只是添加到 QObject 中，而不是 QMateObject 中，故无法通过 QMetaProperties 方法获取到。**
 
-**移除属性可以通过给 setProperty 传入一个无效的 QVariant 参数** ？？？ 通过 READ 创建的属性也能移除？
+**移除动态属性可以通过给 setProperty 传入一个无效的 QVariant 参数**
 
 ## 自定义类型怎样用到属性系统中？
 
@@ -92,7 +97,7 @@ bool QObject::setProperty(const char *name, const QVariant &value)
 
 ## 给类添加额外的信息
 
-Q_CLASSINFO() 宏给类的元对象添加其他信息，添加的方式为 `*name*--*value*`，以下是示例：
+Q_CLASSINFO() 宏给类的元对象添加其他信息，添加的方式为 `name--value`，以下是示例：
 
 ```c++
 Q_CLASSINFO("Version", "3.0.0")
