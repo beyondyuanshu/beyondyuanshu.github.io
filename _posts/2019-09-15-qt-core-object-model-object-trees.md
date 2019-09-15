@@ -1,7 +1,9 @@
+---
 title: Qt 核心之对象模型、对象树以及对象所有权
 tags: Qt Object-Trees
 comments: true
 key: C-2019091501
+---
 
 ## 为什么需要对象模型？
 
