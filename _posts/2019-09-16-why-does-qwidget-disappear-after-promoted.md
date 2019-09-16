@@ -2,14 +2,14 @@
 title: 为什么继承自 QWidget 的自定义控件无法显示背景图片？
 tags: Qt QtQuestion
 comments: true
-key: C-2019091501
+key: C-2019091601
 ---
 
-你可能遇到过在 Qt Designer 中新建一个继承自 QWidget 的 `Qt 设计师界面类` 或者手动写一个 QWidget 的派生类时，设置它的背景样式没有生效。
+你可能遇到过在 Qt Designer 中新建一个继承自 QWidget 的 `Qt 设计师界面类` 或者手动写一个 QWidget 的派生类时，设置它的背景样式没有生效的情况。
 
-![Snipaste_2019-09-14_21-30-21](C:\Users\shuyuan1\Desktop\Snipaste_2019-09-14_21-30-21.png)
+![Snipaste_2019-09-14_21-30-21](https://tva1.sinaimg.cn/large/006y8mN6ly1g715fr6o4nj30tu0bbjsr.jpg)
 
-由于是 QWidget 的派生类，我们先看看 QWidget 的样式参考怎么说：
+由于是 QWidget 的派生类，我们先看看 QWidget 的 [样式参考](https://doc.qt.io/qt-5/stylesheet-reference.html#) ：
 
 ```c++
 If you subclass from QWidget, you need to provide a paintEvent for your custom QWidget as below:
@@ -34,7 +34,7 @@ Warning: Make sure you define the Q_OBJECT macro for your custom widget.
 
 QWidget 默认可能是禁用 styled background 的。查看 QWidget 源码确实能发现在绘制背景时对	Qt::WA_StyledBackground 标志进行了判断：
 
-<img src="C:\Users\shuyuan1\Desktop\Snipaste_2019-09-14_23-03-35.png" alt="Snipaste_2019-09-14_23-03-35"  />
+![Snipaste_2019-09-14_23-03-35](https://tva1.sinaimg.cn/large/006y8mN6ly1g715frwda4j30fq0e3q55.jpg)<u></u>
 
 
 
