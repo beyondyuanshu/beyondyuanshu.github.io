@@ -7,7 +7,7 @@ key: C-2020022801
 
 ## 是什么?
 
-Intent（意图） 是一个消息传递对象，不仅可用于应用间传递，还可用于应用内传递。
+Intent（意图） 是一个在组件之间进行消息传递的对象，不仅可用于应用间传递，还可用于应用内传递。
 
 应用内信息传递主要有 3 种：
 
@@ -21,6 +21,8 @@ Intent（意图） 是一个消息传递对象，不仅可用于应用间传递�
 
 ### 显式使用
 
+一般用于同一应用内。
+
 ```java
 Intent intent = new Intent(FirstActivity.this, SecondActivity.class); // public Intent(Context packageContext, Class<?> cls)
 startActivity(intent);
@@ -30,6 +32,8 @@ startActivity(intent);
 
 ### 隐式使用
 
+一般用于不同应用之间。
+
 ```java
 Intent intent = new Intent("com.example.activitytest.ACTION_START"); // public Intent(String action)
 startActivity(intent);
@@ -38,6 +42,8 @@ startActivity(intent);
 
 
 ## 传递数据
+
+使用 intent extra。
 
 ### 发送数据
 
