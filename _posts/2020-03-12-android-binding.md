@@ -3,7 +3,6 @@ title: Android 学习笔记 004：View.findViewById()、View Binding、Data Bind
 tags: Android
 comments: true
 key: C-2020031201
-
 ---
 
 **仅作为学习记录，内容有待完善**
