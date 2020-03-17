@@ -95,8 +95,7 @@ data 中的 user 变量些布局中用到的数据源属性，布局中的表达
 
 ## 参考
 
-https://developer.android.google.cn/topic/libraries/view-binding
-
+[https://developer.android.google.cn/topic/libraries/view-binding](https://developer.android.google.cn/topic/libraries/view-binding)
 [https://developer.android.google.cn/topic/libraries/data-binding](https://developer.android.google.cn/topic/libraries/data-binding) 
 
 
