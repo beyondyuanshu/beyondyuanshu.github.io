@@ -30,6 +30,6 @@ key: C-2020041202
 
 [https://zh.wikipedia.org/wiki/%E7%BA%BF%E7%A8%8B](https://zh.wikipedia.org/wiki/线程)
 
-[https://www.zhihu.com/question/25532384][https://www.zhihu.com/question/25532384]
+[https://www.zhihu.com/question/25532384](https://www.zhihu.com/question/25532384)
 
 [http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html](http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html)
