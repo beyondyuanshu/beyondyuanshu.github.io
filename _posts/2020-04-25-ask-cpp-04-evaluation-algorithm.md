@@ -42,7 +42,7 @@ void func(int n) {
 
 **常见时间复杂度列表**
 
-![computational-complexity-of-algorithm](/Users/dawny/Downloads/computational-complexity-of-algorithm.png)
+![computational-complexity-of-algorithm](https://tva1.sinaimg.cn/large/007S8ZIlly1ge7iciqxxoj30u10h7jwt.jpg)
 
 ## 空间复杂度
 
