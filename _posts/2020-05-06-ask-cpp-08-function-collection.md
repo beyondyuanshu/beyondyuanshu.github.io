@@ -19,7 +19,7 @@ key: C-2020050601
 * 用引用
 * 用类（类似于结构体）
 * 用 std::tuple，std::pair
-* C++ 17 中的 structured binding
+* C++ 17 中的 structured binding（结构化绑定）
 
 
 
