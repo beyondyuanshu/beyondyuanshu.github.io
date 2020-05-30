@@ -57,7 +57,7 @@ key: C-2020052301
 
 程序运行的时间通常计作：Wall Clock Time/Elapsed Time，它比实际占用 CPU 时间要长，因为 CPU 要时不时的切换去处理其他的程序。
 
-![111](/Users/dawny/Downloads/111.png)
+![111](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfalufiwwwj31rr0u0djb.jpg)
 
 ## 功耗
 
